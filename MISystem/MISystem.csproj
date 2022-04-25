@@ -191,6 +191,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Gooey\Forms\CustomerManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gooey\Forms\CustomerManage.Designer.cs">
+      <DependentUpon>CustomerManage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Gooey\Forms\frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +205,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Gooey\Forms\CustomerManage.resx">
+      <DependentUpon>CustomerManage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Gooey\Forms\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -226,8 +235,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Gooey\Pages\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
