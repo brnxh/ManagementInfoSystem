@@ -80,5 +80,12 @@ namespace MISystem.Gooey.Forms
         {
             showSubMenu(panelSettingSubMenu);
         }
+
+        private void bunifuButton2_Click(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new CustomerManage());
+
+            hideSubMenu();
+        }
     }
 }
