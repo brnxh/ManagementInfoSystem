@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MISystem.Gooey.Forms.Dialog;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +20,14 @@ namespace MISystem.Gooey.Forms
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
+
+
+            DialogResult result = MessageBox.Show("Please enter your credentials first!", "Enter Credentials");
+
+            if (result == DialogResult.OK)
+            {
+                new confirmAccess().ShowDialog();
+            }
 
         }
 
