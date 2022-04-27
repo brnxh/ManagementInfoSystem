@@ -8,21 +8,26 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MISystem.Gooey.Forms.Dialog
+namespace MISystem.Gooey.Forms
 {
-    public partial class CustomerForm : Form
+    public partial class Attendance : Form
     {
-        public CustomerForm()
+        public Attendance()
         {
             InitializeComponent();
         }
 
-        private void bunifuAppBar1_IconClick(object sender, EventArgs e)
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void CustomerForm_Load(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Attendance_Load(object sender, EventArgs e)
         {
 
         }

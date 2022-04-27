@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MISystem.Gooey.Forms.Dialog;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -56,6 +57,8 @@ namespace MISystem.Gooey.Forms
             childForm.Show();
         }
 
+
+
         private void btnCustomer_Click(object sender, EventArgs e)
         {
             showSubMenu(panelCustomerSubMenu);
@@ -81,11 +84,35 @@ namespace MISystem.Gooey.Forms
             showSubMenu(panelSettingSubMenu);
         }
 
-        private void bunifuButton2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
+
+            //confirmAccess access = new confirmAccess();
+            //access.ShowDialog();
+
             openChildFormInPanel(new CustomerManage());
 
             hideSubMenu();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new ManageEmployees());
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new Attendance());
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

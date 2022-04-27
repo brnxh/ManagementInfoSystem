@@ -23,17 +23,18 @@ namespace MISystem.Gooey.Forms.Dialog
 
             }
 
-        private void bunifuButton1_Click(object sender, EventArgs e)
+        private void btnValidate_Click(object sender, EventArgs e)
         {
-            this.Hide();
-
-
-            if (txtUser.Text == "pogi" && txtPass.Text == "pogi")
+            if(tbUser.Text == "pogi" && tbPass.Text == "pogi")
             {
-                new CustomerForm().ShowDialog();
+                // kelangan lumabas yung customerManage
+            }
+            else
+            {
+                MessageBox.Show("Higher authentication needed!");
             }
 
-            this.Close();
+            this.Hide();
         }
     }
 }
