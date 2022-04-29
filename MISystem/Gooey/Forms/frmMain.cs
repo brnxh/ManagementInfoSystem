@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,10 +12,14 @@ using System.Windows.Forms;
 namespace MISystem.Gooey.Forms
 {
     public partial class frmMain : Form
-    {
+    { 
+
+        
+
         public frmMain()
         {
             InitializeComponent();
+            
             hideSubMenu();
         }
 
@@ -56,6 +61,8 @@ namespace MISystem.Gooey.Forms
             childForm.Show();
         }
 
+
+
         private void btnCustomer_Click(object sender, EventArgs e)
         {
             showSubMenu(panelCustomerSubMenu);
@@ -81,11 +88,45 @@ namespace MISystem.Gooey.Forms
             showSubMenu(panelSettingSubMenu);
         }
 
-        private void bunifuButton2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            openChildFormInPanel(new CustomerManage());
+
+            //confirmAccess access = new confirmAccess();
+            //access.ShowDialog();
+
+            openChildFormInPanel(new TableCustomer());
 
             hideSubMenu();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new EmpTable());
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new Attendance());
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new EquipInventoryTbl());
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new ProductInventoryTbl());
         }
     }
 }

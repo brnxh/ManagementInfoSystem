@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,21 +10,17 @@ using System.Windows.Forms;
 
 namespace MISystem.Gooey.Forms
 {
-    public partial class CustomerManage : Form
+    public partial class TableCustomer : Form
     {
-        public CustomerManage()
+        public TableCustomer()
         {
             InitializeComponent();
         }
 
-        private void CustomerManage_Load(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
+            CustomerManage addCustomer = new CustomerManage();
+            addCustomer.Show();
         }
     }
 }
