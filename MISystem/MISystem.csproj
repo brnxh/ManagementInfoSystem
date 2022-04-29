@@ -99,11 +99,29 @@
     <Compile Include="Gooey\Forms\CustomerManage.Designer.cs">
       <DependentUpon>CustomerManage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Gooey\Forms\Dialog\confirmAccess.cs">
+    <Compile Include="Gooey\Forms\EmpTable.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Gooey\Forms\Dialog\confirmAccess.Designer.cs">
-      <DependentUpon>confirmAccess.cs</DependentUpon>
+    <Compile Include="Gooey\Forms\EmpTable.Designer.cs">
+      <DependentUpon>EmpTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gooey\Forms\EquipInventoryTbl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gooey\Forms\EquipInventoryTbl.Designer.cs">
+      <DependentUpon>EquipInventoryTbl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gooey\Forms\EquipmentInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gooey\Forms\EquipmentInventory.Designer.cs">
+      <DependentUpon>EquipmentInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gooey\Forms\EquipStats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gooey\Forms\EquipStats.Designer.cs">
+      <DependentUpon>EquipStats.cs</DependentUpon>
     </Compile>
     <Compile Include="Gooey\Forms\frmMain.cs">
       <SubType>Form</SubType>
@@ -117,6 +135,30 @@
     <Compile Include="Gooey\Forms\ManageEmployees.Designer.cs">
       <DependentUpon>ManageEmployees.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gooey\Forms\ProductInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gooey\Forms\ProductInventory.Designer.cs">
+      <DependentUpon>ProductInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gooey\Forms\ProductInventoryTbl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gooey\Forms\ProductInventoryTbl.Designer.cs">
+      <DependentUpon>ProductInventoryTbl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gooey\Forms\TableCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gooey\Forms\TableCustomer.Designer.cs">
+      <DependentUpon>TableCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gooey\Forms\Validation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gooey\Forms\Validation.Designer.cs">
+      <DependentUpon>Validation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Gooey\Forms\Attendance.resx">
@@ -125,14 +167,35 @@
     <EmbeddedResource Include="Gooey\Forms\CustomerManage.resx">
       <DependentUpon>CustomerManage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Gooey\Forms\Dialog\confirmAccess.resx">
-      <DependentUpon>confirmAccess.cs</DependentUpon>
+    <EmbeddedResource Include="Gooey\Forms\EmpTable.resx">
+      <DependentUpon>EmpTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gooey\Forms\EquipInventoryTbl.resx">
+      <DependentUpon>EquipInventoryTbl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gooey\Forms\EquipmentInventory.resx">
+      <DependentUpon>EquipmentInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gooey\Forms\EquipStats.resx">
+      <DependentUpon>EquipStats.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gooey\Forms\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gooey\Forms\ManageEmployees.resx">
       <DependentUpon>ManageEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gooey\Forms\ProductInventory.resx">
+      <DependentUpon>ProductInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gooey\Forms\ProductInventoryTbl.resx">
+      <DependentUpon>ProductInventoryTbl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gooey\Forms\TableCustomer.resx">
+      <DependentUpon>TableCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gooey\Forms\Validation.resx">
+      <DependentUpon>Validation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

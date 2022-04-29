@@ -53,12 +53,14 @@ namespace MISystem.Gooey.Forms
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelSideMenu.SuspendLayout();
             this.panelSettingSubMenu.SuspendLayout();
             this.panelSrvsSubMenu.SuspendLayout();
             this.panelVentorySubMenu.SuspendLayout();
             this.panelEmpSubMenu.SuspendLayout();
             this.panelCustomerSubMenu.SuspendLayout();
+            this.panelChildForm.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -96,7 +98,7 @@ namespace MISystem.Gooey.Forms
             this.btnExit.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnExit.Size = new System.Drawing.Size(183, 50);
             this.btnExit.TabIndex = 10;
-            this.btnExit.Text = "Exit";
+            this.btnExit.Text = "Log-Out";
             this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
@@ -241,6 +243,7 @@ namespace MISystem.Gooey.Forms
             this.button4.Text = "Product Inventory";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -256,6 +259,7 @@ namespace MISystem.Gooey.Forms
             this.button5.Text = "Equipment Inventory";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // btnInventory
             // 
@@ -381,6 +385,7 @@ namespace MISystem.Gooey.Forms
             // panelChildForm
             // 
             this.panelChildForm.BackColor = System.Drawing.Color.Gray;
+            this.panelChildForm.Controls.Add(this.label1);
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(200, 0);
             this.panelChildForm.Name = "panelChildForm";
@@ -406,6 +411,18 @@ namespace MISystem.Gooey.Forms
             this.panel2.Size = new System.Drawing.Size(200, 110);
             this.panel2.TabIndex = 0;
             // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Chartreuse;
+            this.label1.Location = new System.Drawing.Point(393, 44);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(149, 37);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Dashboard";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -426,6 +443,8 @@ namespace MISystem.Gooey.Forms
             this.panelVentorySubMenu.ResumeLayout(false);
             this.panelEmpSubMenu.ResumeLayout(false);
             this.panelCustomerSubMenu.ResumeLayout(false);
+            this.panelChildForm.ResumeLayout(false);
+            this.panelChildForm.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -456,5 +475,6 @@ namespace MISystem.Gooey.Forms
         private System.Windows.Forms.Panel panelChildForm;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label1;
     }
 }

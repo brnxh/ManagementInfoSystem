@@ -1,4 +1,4 @@
-﻿using MISystem.Gooey.Forms.Dialog;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,10 +12,14 @@ using System.Windows.Forms;
 namespace MISystem.Gooey.Forms
 {
     public partial class frmMain : Form
-    {
+    { 
+
+        
+
         public frmMain()
         {
             InitializeComponent();
+            
             hideSubMenu();
         }
 
@@ -90,7 +94,7 @@ namespace MISystem.Gooey.Forms
             //confirmAccess access = new confirmAccess();
             //access.ShowDialog();
 
-            openChildFormInPanel(new CustomerManage());
+            openChildFormInPanel(new TableCustomer());
 
             hideSubMenu();
         }
@@ -102,7 +106,7 @@ namespace MISystem.Gooey.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            openChildFormInPanel(new ManageEmployees());
+            openChildFormInPanel(new EmpTable());
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -113,6 +117,16 @@ namespace MISystem.Gooey.Forms
         private void frmMain_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new EquipInventoryTbl());
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new ProductInventoryTbl());
         }
     }
 }

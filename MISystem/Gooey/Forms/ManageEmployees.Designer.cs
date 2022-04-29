@@ -56,10 +56,12 @@ namespace MISystem.Gooey.Forms
             this.label12 = new System.Windows.Forms.Label();
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label13 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cbDrop = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label14 = new System.Windows.Forms.Label();
+            this.tbUser = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblUser = new System.Windows.Forms.Label();
+            this.tbPass = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblPass = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // guna2ComboBox1
@@ -89,7 +91,7 @@ namespace MISystem.Gooey.Forms
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Lime;
-            this.button2.Location = new System.Drawing.Point(349, 447);
+            this.button2.Location = new System.Drawing.Point(490, 444);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(129, 41);
             this.button2.TabIndex = 57;
@@ -104,7 +106,7 @@ namespace MISystem.Gooey.Forms
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Lime;
-            this.button1.Location = new System.Drawing.Point(196, 447);
+            this.button1.Location = new System.Drawing.Point(337, 444);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(129, 41);
             this.button1.TabIndex = 56;
@@ -407,11 +409,11 @@ namespace MISystem.Gooey.Forms
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.ForestGreen;
-            this.label1.Location = new System.Drawing.Point(379, 26);
+            this.label1.Location = new System.Drawing.Point(399, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(240, 37);
+            this.label1.Size = new System.Drawing.Size(190, 37);
             this.label1.TabIndex = 36;
-            this.label1.Text = "Manage Employee";
+            this.label1.Text = "Add Employee";
             // 
             // guna2TextBox10
             // 
@@ -425,7 +427,7 @@ namespace MISystem.Gooey.Forms
             this.guna2TextBox10.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox10.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox10.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox10.Location = new System.Drawing.Point(608, 203);
+            this.guna2TextBox10.Location = new System.Drawing.Point(596, 144);
             this.guna2TextBox10.Name = "guna2TextBox10";
             this.guna2TextBox10.PasswordChar = '\0';
             this.guna2TextBox10.PlaceholderText = "";
@@ -438,7 +440,7 @@ namespace MISystem.Gooey.Forms
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(604, 179);
+            this.label12.Location = new System.Drawing.Point(592, 120);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(64, 20);
             this.label12.TabIndex = 59;
@@ -450,7 +452,7 @@ namespace MISystem.Gooey.Forms
             this.guna2DateTimePicker1.Checked = true;
             this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(608, 262);
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(596, 203);
             this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
@@ -463,82 +465,122 @@ namespace MISystem.Gooey.Forms
             this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(604, 238);
+            this.label13.Location = new System.Drawing.Point(592, 179);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(85, 20);
             this.label13.TabIndex = 62;
             this.label13.Text = "Date Hired:";
             // 
-            // button3
+            // cbDrop
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button3.BackColor = System.Drawing.Color.Black;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Lime;
-            this.button3.Location = new System.Drawing.Point(499, 447);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(129, 41);
-            this.button3.TabIndex = 63;
-            this.button3.Text = "Add Employee";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button4.BackColor = System.Drawing.Color.Black;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.Lime;
-            this.button4.Location = new System.Drawing.Point(643, 447);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(129, 41);
-            this.button4.TabIndex = 64;
-            this.button4.Text = "View Employees";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // guna2ComboBox2
-            // 
-            this.guna2ComboBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox2.ItemHeight = 30;
-            this.guna2ComboBox2.Items.AddRange(new object[] {
+            this.cbDrop.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbDrop.BackColor = System.Drawing.Color.Transparent;
+            this.cbDrop.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbDrop.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbDrop.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbDrop.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbDrop.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbDrop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbDrop.ItemHeight = 30;
+            this.cbDrop.Items.AddRange(new object[] {
             "Admin",
             "Operator",
             "Employee"});
-            this.guna2ComboBox2.Location = new System.Drawing.Point(608, 320);
-            this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.Size = new System.Drawing.Size(161, 36);
-            this.guna2ComboBox2.TabIndex = 65;
+            this.cbDrop.Location = new System.Drawing.Point(596, 261);
+            this.cbDrop.Name = "cbDrop";
+            this.cbDrop.Size = new System.Drawing.Size(161, 36);
+            this.cbDrop.TabIndex = 65;
+            this.cbDrop.SelectedIndexChanged += new System.EventHandler(this.cbDrop_SelectedIndexChanged);
             // 
             // label14
             // 
             this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(609, 297);
+            this.label14.Location = new System.Drawing.Point(597, 238);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(101, 20);
             this.label14.TabIndex = 66;
             this.label14.Text = "Account Type:";
+            // 
+            // tbUser
+            // 
+            this.tbUser.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbUser.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbUser.DefaultText = "";
+            this.tbUser.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbUser.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbUser.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbUser.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.tbUser.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbUser.Location = new System.Drawing.Point(596, 321);
+            this.tbUser.Name = "tbUser";
+            this.tbUser.PasswordChar = '\0';
+            this.tbUser.PlaceholderText = "";
+            this.tbUser.SelectedText = "";
+            this.tbUser.Size = new System.Drawing.Size(161, 32);
+            this.tbUser.TabIndex = 68;
+            this.tbUser.Visible = false;
+            // 
+            // lblUser
+            // 
+            this.lblUser.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblUser.AutoSize = true;
+            this.lblUser.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUser.Location = new System.Drawing.Point(597, 297);
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new System.Drawing.Size(78, 20);
+            this.lblUser.TabIndex = 67;
+            this.lblUser.Text = "Username:";
+            this.lblUser.Visible = false;
+            this.lblUser.Click += new System.EventHandler(this.label15_Click);
+            // 
+            // tbPass
+            // 
+            this.tbPass.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbPass.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbPass.DefaultText = "";
+            this.tbPass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbPass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbPass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbPass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbPass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbPass.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.tbPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbPass.Location = new System.Drawing.Point(596, 380);
+            this.tbPass.Name = "tbPass";
+            this.tbPass.PasswordChar = '*';
+            this.tbPass.PlaceholderText = "";
+            this.tbPass.SelectedText = "";
+            this.tbPass.Size = new System.Drawing.Size(161, 32);
+            this.tbPass.TabIndex = 70;
+            this.tbPass.Visible = false;
+            // 
+            // lblPass
+            // 
+            this.lblPass.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblPass.AutoSize = true;
+            this.lblPass.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPass.Location = new System.Drawing.Point(597, 356);
+            this.lblPass.Name = "lblPass";
+            this.lblPass.Size = new System.Drawing.Size(73, 20);
+            this.lblPass.TabIndex = 69;
+            this.lblPass.Text = "Password:";
+            this.lblPass.Visible = false;
             // 
             // ManageEmployees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(994, 604);
+            this.Controls.Add(this.tbPass);
+            this.Controls.Add(this.lblPass);
+            this.Controls.Add(this.tbUser);
+            this.Controls.Add(this.lblUser);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.guna2ComboBox2);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.cbDrop);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.guna2DateTimePicker1);
             this.Controls.Add(this.guna2TextBox10);
@@ -566,9 +608,11 @@ namespace MISystem.Gooey.Forms
             this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ManageEmployees";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ManageEmployees";
+            this.Load += new System.EventHandler(this.ManageEmployees_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -603,9 +647,11 @@ namespace MISystem.Gooey.Forms
         private System.Windows.Forms.Label label12;
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
+        private Guna.UI2.WinForms.Guna2ComboBox cbDrop;
         private System.Windows.Forms.Label label14;
+        private Guna.UI2.WinForms.Guna2TextBox tbUser;
+        private System.Windows.Forms.Label lblUser;
+        private Guna.UI2.WinForms.Guna2TextBox tbPass;
+        private System.Windows.Forms.Label lblPass;
     }
 }
