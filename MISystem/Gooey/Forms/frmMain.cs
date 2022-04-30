@@ -121,12 +121,18 @@ namespace MISystem.Gooey.Forms
 
         private void button5_Click(object sender, EventArgs e)
         {
+            
             openChildFormInPanel(new EquipInventoryTbl());
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             openChildFormInPanel(new ProductInventoryTbl());
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new MainServiceForm());
         }
     }
 }

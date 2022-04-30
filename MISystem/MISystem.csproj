@@ -117,12 +117,6 @@
     <Compile Include="Gooey\Forms\EquipmentInventory.Designer.cs">
       <DependentUpon>EquipmentInventory.cs</DependentUpon>
     </Compile>
-    <Compile Include="Gooey\Forms\EquipStats.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Gooey\Forms\EquipStats.Designer.cs">
-      <DependentUpon>EquipStats.cs</DependentUpon>
-    </Compile>
     <Compile Include="Gooey\Forms\frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +140,12 @@
     </Compile>
     <Compile Include="Gooey\Forms\ProductInventoryTbl.Designer.cs">
       <DependentUpon>ProductInventoryTbl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gooey\Forms\MainServiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gooey\Forms\MainServiceForm.Designer.cs">
+      <DependentUpon>MainServiceForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Gooey\Forms\TableCustomer.cs">
       <SubType>Form</SubType>
@@ -176,11 +176,11 @@
     <EmbeddedResource Include="Gooey\Forms\EquipmentInventory.resx">
       <DependentUpon>EquipmentInventory.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Gooey\Forms\EquipStats.resx">
-      <DependentUpon>EquipStats.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Gooey\Forms\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gooey\Forms\MainServiceForm.resx">
+      <DependentUpon>MainServiceForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gooey\Forms\ManageEmployees.resx">
       <DependentUpon>ManageEmployees.cs</DependentUpon>

@@ -400,7 +400,7 @@ namespace MISystem.Gooey.Forms
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "EquipmentInventory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "EquipmentInventory";
+            this.Text = "Equipment Inventory";
             this.Load += new System.EventHandler(this.EquipmentInventory_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

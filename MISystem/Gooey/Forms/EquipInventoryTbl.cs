@@ -17,21 +17,10 @@ namespace MISystem.Gooey.Forms
             InitializeComponent();
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            EquipStats showStats = new EquipStats();
-            showStats.Show();
-            //frmMain.frmMainInstance.Show();
-            //EquipmentInventory addEquip = new EquipmentInventory();
-            //addEquip.TopLevel = false;
-            //panelChildForm.Controls.Add(addEquip);
-
-
-            
-        }
-
         private void EquipInventoryTbl_Load(object sender, EventArgs e)
         {
+            panelEquipStats.Visible = true;
+            panelEquipStats.Dock = DockStyle.Fill;
 
         }
 
@@ -45,6 +34,16 @@ namespace MISystem.Gooey.Forms
         {
             EquipmentInventory addEquip = new EquipmentInventory();
             addEquip.Show();
+        }
+
+        private void panelEquipStats_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnGo_Click(object sender, EventArgs e)
+        {
+            panelEquipStats.Visible = false;
         }
     }
 }
