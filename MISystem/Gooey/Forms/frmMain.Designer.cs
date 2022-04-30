@@ -51,9 +51,9 @@ namespace MISystem.Gooey.Forms
             this.button2 = new System.Windows.Forms.Button();
             this.btnCustomer = new System.Windows.Forms.Button();
             this.panelChildForm = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.panelSideMenu.SuspendLayout();
             this.panelSettingSubMenu.SuspendLayout();
             this.panelSrvsSubMenu.SuspendLayout();
@@ -200,6 +200,7 @@ namespace MISystem.Gooey.Forms
             this.button7.Text = "Schedule/Dispatch";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // btnService
             // 
@@ -392,6 +393,18 @@ namespace MISystem.Gooey.Forms
             this.panelChildForm.Size = new System.Drawing.Size(909, 641);
             this.panelChildForm.TabIndex = 2;
             // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Chartreuse;
+            this.label1.Location = new System.Drawing.Point(393, 44);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(149, 37);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Dashboard";
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.panelSideMenu);
@@ -410,18 +423,6 @@ namespace MISystem.Gooey.Forms
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(200, 110);
             this.panel2.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Chartreuse;
-            this.label1.Location = new System.Drawing.Point(393, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 37);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Dashboard";
             // 
             // frmMain
             // 
