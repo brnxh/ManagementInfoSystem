@@ -134,5 +134,10 @@ namespace MISystem.Gooey.Forms
         {
             openChildFormInPanel(new MainServiceForm());
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new SalesControl());
+        }
     }
 }
