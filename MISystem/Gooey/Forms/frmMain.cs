@@ -139,5 +139,15 @@ namespace MISystem.Gooey.Forms
         {
             openChildFormInPanel(new SalesControl());
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new AuditLog());
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new ChangePass());
+        }
     }
 }
