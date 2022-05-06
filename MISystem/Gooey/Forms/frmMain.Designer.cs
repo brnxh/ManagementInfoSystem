@@ -29,6 +29,15 @@ namespace MISystem.Gooey.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
             this.panelSettingSubMenu = new System.Windows.Forms.Panel();
@@ -54,6 +63,14 @@ namespace MISystem.Gooey.Forms
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panelOrderCharts = new System.Windows.Forms.Panel();
+            this.label20 = new System.Windows.Forms.Label();
+            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.label19 = new System.Windows.Forms.Label();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panelSideMenu.SuspendLayout();
             this.panelSettingSubMenu.SuspendLayout();
             this.panelSrvsSubMenu.SuspendLayout();
@@ -62,6 +79,10 @@ namespace MISystem.Gooey.Forms
             this.panelCustomerSubMenu.SuspendLayout();
             this.panelChildForm.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panelOrderCharts.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart3)).BeginInit();
             this.SuspendLayout();
             // 
             // panelSideMenu
@@ -82,7 +103,7 @@ namespace MISystem.Gooey.Forms
             this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideMenu.Location = new System.Drawing.Point(0, 110);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(200, 531);
+            this.panelSideMenu.Size = new System.Drawing.Size(200, 556);
             this.panelSideMenu.TabIndex = 1;
             // 
             // btnExit
@@ -127,6 +148,7 @@ namespace MISystem.Gooey.Forms
             this.button9.Text = "Change Password";
             this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 
@@ -142,6 +164,7 @@ namespace MISystem.Gooey.Forms
             this.button10.Text = "Audit Logs";
             this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // btnSetting
             // 
@@ -387,11 +410,12 @@ namespace MISystem.Gooey.Forms
             // panelChildForm
             // 
             this.panelChildForm.BackColor = System.Drawing.Color.Gray;
+            this.panelChildForm.Controls.Add(this.panelOrderCharts);
             this.panelChildForm.Controls.Add(this.label1);
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(200, 0);
             this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(909, 641);
+            this.panelChildForm.Size = new System.Drawing.Size(909, 666);
             this.panelChildForm.TabIndex = 2;
             // 
             // label1
@@ -400,7 +424,7 @@ namespace MISystem.Gooey.Forms
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Chartreuse;
-            this.label1.Location = new System.Drawing.Point(393, 44);
+            this.label1.Location = new System.Drawing.Point(390, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(149, 37);
             this.label1.TabIndex = 16;
@@ -413,7 +437,7 @@ namespace MISystem.Gooey.Forms
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 641);
+            this.panel1.Size = new System.Drawing.Size(200, 666);
             this.panel1.TabIndex = 3;
             // 
             // panel2
@@ -425,16 +449,123 @@ namespace MISystem.Gooey.Forms
             this.panel2.Size = new System.Drawing.Size(200, 110);
             this.panel2.TabIndex = 0;
             // 
+            // panelOrderCharts
+            // 
+            this.panelOrderCharts.Controls.Add(this.label3);
+            this.panelOrderCharts.Controls.Add(this.label2);
+            this.panelOrderCharts.Controls.Add(this.chart3);
+            this.panelOrderCharts.Controls.Add(this.label20);
+            this.panelOrderCharts.Controls.Add(this.chart2);
+            this.panelOrderCharts.Controls.Add(this.label19);
+            this.panelOrderCharts.Controls.Add(this.chart1);
+            this.panelOrderCharts.Location = new System.Drawing.Point(25, 110);
+            this.panelOrderCharts.Name = "panelOrderCharts";
+            this.panelOrderCharts.Size = new System.Drawing.Size(852, 533);
+            this.panelOrderCharts.TabIndex = 156;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(368, 579);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(204, 21);
+            this.label20.TabIndex = 161;
+            this.label20.Text = "TOTAL SALES PER MONTH";
+            // 
+            // chart2
+            // 
+            chartArea7.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea7);
+            legend7.Name = "Legend1";
+            this.chart2.Legends.Add(legend7);
+            this.chart2.Location = new System.Drawing.Point(78, 323);
+            this.chart2.Name = "chart2";
+            this.chart2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
+            series7.ChartArea = "ChartArea1";
+            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series7.Legend = "Legend1";
+            series7.Name = "Series1";
+            this.chart2.Series.Add(series7);
+            this.chart2.Size = new System.Drawing.Size(670, 177);
+            this.chart2.TabIndex = 160;
+            this.chart2.Text = "chart2";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(74, 14);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(198, 21);
+            this.label19.TabIndex = 159;
+            this.label19.Text = "SERVICES PERFORMANCE";
+            // 
+            // chart1
+            // 
+            chartArea8.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea8);
+            legend8.Name = "Legend1";
+            this.chart1.Legends.Add(legend8);
+            this.chart1.Location = new System.Drawing.Point(40, 50);
+            this.chart1.Name = "chart1";
+            series8.ChartArea = "ChartArea1";
+            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series8.Legend = "Legend1";
+            series8.Name = "Series1";
+            this.chart1.Series.Add(series8);
+            this.chart1.Size = new System.Drawing.Size(271, 184);
+            this.chart1.TabIndex = 158;
+            this.chart1.Text = "chart1";
+            // 
+            // chart3
+            // 
+            chartArea9.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea9);
+            legend9.Name = "Legend1";
+            this.chart3.Legends.Add(legend9);
+            this.chart3.Location = new System.Drawing.Point(397, 50);
+            this.chart3.Name = "chart3";
+            this.chart3.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
+            series9.ChartArea = "ChartArea1";
+            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series9.Legend = "Legend1";
+            series9.Name = "Series1";
+            this.chart3.Series.Add(series9);
+            this.chart3.Size = new System.Drawing.Size(402, 184);
+            this.chart3.TabIndex = 162;
+            this.chart3.Text = "chart3";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(512, 14);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(168, 21);
+            this.label2.TabIndex = 163;
+            this.label2.Text = "RFB\'s PERFORMANCE";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(296, 279);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(218, 21);
+            this.label3.TabIndex = 164;
+            this.label3.Text = "RFB\'s CITIES PERFORMANCE";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(1109, 641);
+            this.ClientSize = new System.Drawing.Size(1109, 666);
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MinimumSize = new System.Drawing.Size(1109, 680);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MinimumSize = new System.Drawing.Size(1125, 705);
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMain";
@@ -448,6 +579,11 @@ namespace MISystem.Gooey.Forms
             this.panelChildForm.ResumeLayout(false);
             this.panelChildForm.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.panelOrderCharts.ResumeLayout(false);
+            this.panelOrderCharts.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -478,5 +614,13 @@ namespace MISystem.Gooey.Forms
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panelOrderCharts;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart3;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }
