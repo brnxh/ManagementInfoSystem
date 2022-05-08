@@ -16,7 +16,8 @@ namespace MISystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Gooey.Forms.frmMain());
+            //Application.Run(new Gooey.Forms.frmMain());
+            Application.Run(new Gooey.Forms.LogIn());
         }
     }
 }

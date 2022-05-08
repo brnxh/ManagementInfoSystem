@@ -118,6 +118,12 @@
     <Compile Include="Gooey\Forms\DispatchForm.Designer.cs">
       <DependentUpon>DispatchForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gooey\Forms\EmpQRCode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gooey\Forms\EmpQRCode.Designer.cs">
+      <DependentUpon>EmpQRCode.cs</DependentUpon>
+    </Compile>
     <Compile Include="Gooey\Forms\EmpTable.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,12 @@
     <Compile Include="Gooey\Forms\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gooey\Forms\LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gooey\Forms\LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Gooey\Forms\ManageEmployees.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +177,12 @@
     </Compile>
     <Compile Include="Gooey\Forms\MainServiceForm.Designer.cs">
       <DependentUpon>MainServiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gooey\Forms\ProductQRCode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gooey\Forms\ProductQRCode.Designer.cs">
+      <DependentUpon>ProductQRCode.cs</DependentUpon>
     </Compile>
     <Compile Include="Gooey\Forms\SalesControl.cs">
       <SubType>Form</SubType>
@@ -201,6 +219,9 @@
     <EmbeddedResource Include="Gooey\Forms\DispatchForm.resx">
       <DependentUpon>DispatchForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Gooey\Forms\EmpQRCode.resx">
+      <DependentUpon>EmpQRCode.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Gooey\Forms\EmpTable.resx">
       <DependentUpon>EmpTable.cs</DependentUpon>
     </EmbeddedResource>
@@ -213,6 +234,9 @@
     <EmbeddedResource Include="Gooey\Forms\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Gooey\Forms\LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Gooey\Forms\MainServiceForm.resx">
       <DependentUpon>MainServiceForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -224,6 +248,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Gooey\Forms\ProductInventoryTbl.resx">
       <DependentUpon>ProductInventoryTbl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gooey\Forms\ProductQRCode.resx">
+      <DependentUpon>ProductQRCode.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gooey\Forms\SalesControl.resx">
       <DependentUpon>SalesControl.cs</DependentUpon>

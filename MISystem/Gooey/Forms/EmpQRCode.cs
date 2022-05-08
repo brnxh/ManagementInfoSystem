@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace MISystem.Gooey.Forms
 {
-    public partial class AuditLog : Form
+    public partial class EmpQRCode : UserControl
     {
-        public AuditLog()
+        public EmpQRCode()
         {
             InitializeComponent();
-        }
-
-        private void AuditLog_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

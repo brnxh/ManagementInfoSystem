@@ -19,11 +19,26 @@ namespace MISystem.Gooey.Forms
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            ManageEmployees addEmp = new ManageEmployees();
-            addEmp.Show();
+
+            //EMPLOYEE EDIT FORM
+            //ManageEmployees addEmp = new ManageEmployees();
+            //addEmp.Show();
         }
 
         private void EmpTable_Load(object sender, EventArgs e)
+        {
+
+            // VALIDATION FORM
+            //panelValidate.Visible = true;
+            //panelValidate.Dock = DockStyle.Fill;
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
