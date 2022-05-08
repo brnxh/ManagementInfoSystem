@@ -88,8 +88,16 @@ namespace MISystem.Gooey.Forms
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.panelValidate = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.guna2TextBox13 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.guna2TextBox20 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label30 = new System.Windows.Forms.Label();
             this.panelDispatchList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            this.panelValidate.SuspendLayout();
             this.SuspendLayout();
             // 
             // label28
@@ -975,11 +983,115 @@ namespace MISystem.Gooey.Forms
             this.label1.TabIndex = 96;
             this.label1.Text = "Dispatch";
             // 
+            // panelValidate
+            // 
+            this.panelValidate.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panelValidate.Controls.Add(this.label15);
+            this.panelValidate.Controls.Add(this.button3);
+            this.panelValidate.Controls.Add(this.guna2TextBox13);
+            this.panelValidate.Controls.Add(this.label29);
+            this.panelValidate.Controls.Add(this.guna2TextBox20);
+            this.panelValidate.Controls.Add(this.label30);
+            this.panelValidate.Location = new System.Drawing.Point(1057, 514);
+            this.panelValidate.Name = "panelValidate";
+            this.panelValidate.Size = new System.Drawing.Size(307, 246);
+            this.panelValidate.TabIndex = 81;
+            // 
+            // label15
+            // 
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.ForestGreen;
+            this.label15.Location = new System.Drawing.Point(75, 32);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(163, 30);
+            this.label15.TabIndex = 81;
+            this.label15.Text = "Confirm Access";
+            // 
+            // button3
+            // 
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button3.BackColor = System.Drawing.Color.Black;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.Lime;
+            this.button3.Location = new System.Drawing.Point(109, 170);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(129, 41);
+            this.button3.TabIndex = 80;
+            this.button3.Text = "Valdiate";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // guna2TextBox13
+            // 
+            this.guna2TextBox13.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guna2TextBox13.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox13.DefaultText = "";
+            this.guna2TextBox13.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox13.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox13.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox13.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox13.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox13.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox13.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox13.Location = new System.Drawing.Point(122, 83);
+            this.guna2TextBox13.Name = "guna2TextBox13";
+            this.guna2TextBox13.PasswordChar = '\0';
+            this.guna2TextBox13.PlaceholderText = "";
+            this.guna2TextBox13.SelectedText = "";
+            this.guna2TextBox13.Size = new System.Drawing.Size(161, 32);
+            this.guna2TextBox13.TabIndex = 73;
+            // 
+            // label29
+            // 
+            this.label29.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(18, 89);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(78, 20);
+            this.label29.TabIndex = 72;
+            this.label29.Text = "Username:";
+            // 
+            // guna2TextBox20
+            // 
+            this.guna2TextBox20.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guna2TextBox20.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox20.DefaultText = "";
+            this.guna2TextBox20.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox20.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox20.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox20.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox20.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox20.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox20.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox20.Location = new System.Drawing.Point(124, 123);
+            this.guna2TextBox20.Name = "guna2TextBox20";
+            this.guna2TextBox20.PasswordChar = '\0';
+            this.guna2TextBox20.PlaceholderText = "";
+            this.guna2TextBox20.SelectedText = "";
+            this.guna2TextBox20.Size = new System.Drawing.Size(161, 32);
+            this.guna2TextBox20.TabIndex = 71;
+            // 
+            // label30
+            // 
+            this.label30.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(20, 129);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(73, 20);
+            this.label30.TabIndex = 70;
+            this.label30.Text = "Password:";
+            // 
             // DispatchForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1386, 788);
+            this.Controls.Add(this.panelValidate);
             this.Controls.Add(this.panelDispatchList);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.label26);
@@ -1039,6 +1151,8 @@ namespace MISystem.Gooey.Forms
             this.panelDispatchList.ResumeLayout(false);
             this.panelDispatchList.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            this.panelValidate.ResumeLayout(false);
+            this.panelValidate.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1102,5 +1216,12 @@ namespace MISystem.Gooey.Forms
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panelValidate;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button button3;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox13;
+        private System.Windows.Forms.Label label29;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox20;
+        private System.Windows.Forms.Label label30;
     }
 }

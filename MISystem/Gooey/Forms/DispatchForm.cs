@@ -19,8 +19,11 @@ namespace MISystem.Gooey.Forms
 
         private void DispatchForm_Load(object sender, EventArgs e)
         {
-            panelDispatchList.Visible = true;
-            panelDispatchList.Dock = DockStyle.Fill;
+            panelValidate.Visible = true;
+            panelValidate.Dock = DockStyle.Fill;
+
+            //panelDispatchList.Visible = true;
+            //panelDispatchList.Dock = DockStyle.Fill;
         }
     }
 }

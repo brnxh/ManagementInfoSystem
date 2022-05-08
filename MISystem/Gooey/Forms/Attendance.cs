@@ -17,17 +17,20 @@ namespace MISystem.Gooey.Forms
             InitializeComponent();
         }
 
-        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+
+
+        private void Attendance_Load(object sender, EventArgs e)
+        {
+            panelValidate.Visible = true;
+            panelValidate.Dock = DockStyle.Fill;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
         {
 
         }
 
         private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Attendance_Load(object sender, EventArgs e)
         {
 
         }

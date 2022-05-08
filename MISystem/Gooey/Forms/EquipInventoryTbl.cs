@@ -43,7 +43,12 @@ namespace MISystem.Gooey.Forms
 
         private void btnGo_Click(object sender, EventArgs e)
         {
-            panelEquipStats.Visible = false;
+            //panelValidate.Visible = true;
+            //panelValidate.Dock = DockStyle.Fill;
+
+
+
+            //panelEquipStats.Visible = false;
         }
     }
 }
