@@ -22,5 +22,10 @@ namespace MISystem.Gooey.Forms
             CustomerManage addCustomer = new CustomerManage();
             addCustomer.Show();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

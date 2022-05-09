@@ -19,10 +19,13 @@ namespace MISystem.Gooey.Forms
 
         private void SalesControl_Load(object sender, EventArgs e)
         {
-            panelValidate.Visible = true;
-            panelValidate.Dock = DockStyle.Fill;
-
+            //panelValidate.Visible = true;
+            //panelValidate.Dock = DockStyle.Fill;
             //panelOrderCharts.Visible = false;
+
+            panelValidate.Visible = false;
+            panelOrderCharts.Visible = false;
+            
         }
 
         private void guna2TextBox11_TextChanged(object sender, EventArgs e)

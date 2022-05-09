@@ -44,5 +44,10 @@ namespace MISystem.Gooey.Forms
                 tbPass.Visible = false;
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -112,6 +112,7 @@ namespace MISystem.Gooey.Forms
             this.button1.TabIndex = 56;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label11
             // 
@@ -574,6 +575,7 @@ namespace MISystem.Gooey.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(994, 604);
             this.Controls.Add(this.tbPass);
             this.Controls.Add(this.lblPass);
