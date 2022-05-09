@@ -27,5 +27,13 @@ namespace MISystem.Gooey.Forms
         {
 
         }
+
+        private void TableCustomer_Load(object sender, EventArgs e)
+        {
+
+            // validate first
+            //panelValidate.Visible = true;
+            //panelValidate.Dock = DockStyle.Fill;
+        }
     }
 }
