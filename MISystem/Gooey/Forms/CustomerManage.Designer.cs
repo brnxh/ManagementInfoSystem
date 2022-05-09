@@ -432,8 +432,8 @@ namespace MISystem.Gooey.Forms
             this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.guna2ComboBox1.ItemHeight = 30;
             this.guna2ComboBox1.Items.AddRange(new object[] {
-            "Single",
-            "Married"});
+            "Active",
+            "In-Active"});
             this.guna2ComboBox1.Location = new System.Drawing.Point(265, 353);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
             this.guna2ComboBox1.Size = new System.Drawing.Size(156, 36);
@@ -443,6 +443,7 @@ namespace MISystem.Gooey.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(854, 604);
             this.Controls.Add(this.guna2ComboBox1);
             this.Controls.Add(this.guna2TextBox11);

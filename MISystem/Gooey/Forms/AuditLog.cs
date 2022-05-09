@@ -19,7 +19,10 @@ namespace MISystem.Gooey.Forms
 
         private void AuditLog_Load(object sender, EventArgs e)
         {
+            //panelValidate.Visible = true;
+            //panelValidate.Dock = DockStyle.Fill;
 
+            panelValidate.Visible = false;
         }
     }
 }

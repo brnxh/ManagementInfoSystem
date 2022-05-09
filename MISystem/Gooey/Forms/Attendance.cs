@@ -21,8 +21,10 @@ namespace MISystem.Gooey.Forms
 
         private void Attendance_Load(object sender, EventArgs e)
         {
-            panelValidate.Visible = true;
-            panelValidate.Dock = DockStyle.Fill;
+            //panelValidate.Visible = true;
+            //panelValidate.Dock = DockStyle.Fill;
+
+            panelValidate.Visible = false;
         }
 
         private void button3_Click(object sender, EventArgs e)

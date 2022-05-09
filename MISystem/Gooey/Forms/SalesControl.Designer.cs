@@ -877,7 +877,7 @@ namespace MISystem.Gooey.Forms
             this.panelValidate.Controls.Add(this.label21);
             this.panelValidate.Controls.Add(this.guna2TextBox16);
             this.panelValidate.Controls.Add(this.label22);
-            this.panelValidate.Location = new System.Drawing.Point(920, 41);
+            this.panelValidate.Location = new System.Drawing.Point(1227, 193);
             this.panelValidate.Name = "panelValidate";
             this.panelValidate.Size = new System.Drawing.Size(307, 246);
             this.panelValidate.TabIndex = 156;
@@ -976,6 +976,7 @@ namespace MISystem.Gooey.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1328, 788);
             this.Controls.Add(this.panelValidate);
             this.Controls.Add(this.panelOrderCharts);

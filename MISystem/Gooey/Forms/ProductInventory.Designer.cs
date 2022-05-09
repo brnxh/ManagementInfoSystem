@@ -107,6 +107,7 @@ namespace MISystem.Gooey.Forms
             this.button2.TabIndex = 108;
             this.button2.Text = "Update";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -549,6 +550,7 @@ namespace MISystem.Gooey.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(994, 604);
             this.Controls.Add(this.cbHPDrop);
             this.Controls.Add(this.lblHP);

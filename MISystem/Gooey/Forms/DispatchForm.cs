@@ -19,11 +19,42 @@ namespace MISystem.Gooey.Forms
 
         private void DispatchForm_Load(object sender, EventArgs e)
         {
-            panelValidate.Visible = true;
-            panelValidate.Dock = DockStyle.Fill;
+            // TRIGGER CONFIRM FIRST APPROACH
+            //panelValidate.Visible = true;
+            //panelValidate.Dock = DockStyle.Fill;
+            //panelDispatchForm.Visible = false;
+            //panelDispatchList.Visible = false;
 
-            //panelDispatchList.Visible = true;
-            //panelDispatchList.Dock = DockStyle.Fill;
+            panelDispatchList.Visible = true;
+            panelDispatchList.Dock = DockStyle.Fill;
+            panelValidate.Visible = false;
+            panelDispatchForm.Visible = false;
+        }
+
+        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void panelDispatchList_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnAddDispatch_Click(object sender, EventArgs e)
+        {
+            panelDispatchList.Visible = false;
+
+            panelDispatchForm.Visible = true;
+            panelDispatchForm.Dock = DockStyle.Fill;
+        }
+
+        private void btnSaveDisp_Click(object sender, EventArgs e)
+        {
+            panelDispatchForm.Visible = false;
+
+            panelDispatchList.Visible = true;
+            panelDispatchList.Dock = DockStyle.Fill;
         }
     }
 }

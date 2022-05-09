@@ -29,15 +29,15 @@ namespace MISystem.Gooey.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea13 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend13 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea14 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend14 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea15 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend15 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
             this.panelSettingSubMenu = new System.Windows.Forms.Panel();
@@ -60,17 +60,20 @@ namespace MISystem.Gooey.Forms
             this.button2 = new System.Windows.Forms.Button();
             this.btnCustomer = new System.Windows.Forms.Button();
             this.panelChildForm = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panelOrderCharts = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label20 = new System.Windows.Forms.Label();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label19 = new System.Windows.Forms.Label();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.panelSideMenu.SuspendLayout();
             this.panelSettingSubMenu.SuspendLayout();
             this.panelSrvsSubMenu.SuspendLayout();
@@ -78,17 +81,19 @@ namespace MISystem.Gooey.Forms
             this.panelEmpSubMenu.SuspendLayout();
             this.panelCustomerSubMenu.SuspendLayout();
             this.panelChildForm.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panelOrderCharts.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart3)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelSideMenu
             // 
             this.panelSideMenu.AutoScroll = true;
-            this.panelSideMenu.BackColor = System.Drawing.Color.Transparent;
+            this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panelSideMenu.Controls.Add(this.btnExit);
             this.panelSideMenu.Controls.Add(this.panelSettingSubMenu);
             this.panelSideMenu.Controls.Add(this.btnSetting);
@@ -108,13 +113,13 @@ namespace MISystem.Gooey.Forms
             // 
             // btnExit
             // 
-            this.btnExit.BackColor = System.Drawing.Color.Red;
+            this.btnExit.BackColor = System.Drawing.Color.DarkRed;
             this.btnExit.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.Transparent;
-            this.btnExit.Location = new System.Drawing.Point(0, 700);
+            this.btnExit.Location = new System.Drawing.Point(0, 750);
             this.btnExit.Name = "btnExit";
             this.btnExit.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnExit.Size = new System.Drawing.Size(183, 50);
@@ -129,18 +134,19 @@ namespace MISystem.Gooey.Forms
             this.panelSettingSubMenu.Controls.Add(this.button9);
             this.panelSettingSubMenu.Controls.Add(this.button10);
             this.panelSettingSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSettingSubMenu.Location = new System.Drawing.Point(0, 600);
+            this.panelSettingSubMenu.Location = new System.Drawing.Point(0, 650);
             this.panelSettingSubMenu.Name = "panelSettingSubMenu";
             this.panelSettingSubMenu.Size = new System.Drawing.Size(183, 100);
             this.panelSettingSubMenu.TabIndex = 9;
             // 
             // button9
             // 
-            this.button9.BackColor = System.Drawing.Color.Lime;
+            this.button9.BackColor = System.Drawing.Color.White;
             this.button9.Dock = System.Windows.Forms.DockStyle.Top;
             this.button9.FlatAppearance.BorderSize = 0;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.Color.ForestGreen;
             this.button9.Location = new System.Drawing.Point(0, 50);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(183, 50);
@@ -152,11 +158,12 @@ namespace MISystem.Gooey.Forms
             // 
             // button10
             // 
-            this.button10.BackColor = System.Drawing.Color.Lime;
+            this.button10.BackColor = System.Drawing.Color.White;
             this.button10.Dock = System.Windows.Forms.DockStyle.Top;
             this.button10.FlatAppearance.BorderSize = 0;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.ForeColor = System.Drawing.Color.ForestGreen;
             this.button10.Location = new System.Drawing.Point(0, 0);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(183, 50);
@@ -173,8 +180,8 @@ namespace MISystem.Gooey.Forms
             this.btnSetting.FlatAppearance.BorderSize = 0;
             this.btnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSetting.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSetting.ForeColor = System.Drawing.Color.Lime;
-            this.btnSetting.Location = new System.Drawing.Point(0, 550);
+            this.btnSetting.ForeColor = System.Drawing.Color.White;
+            this.btnSetting.Location = new System.Drawing.Point(0, 600);
             this.btnSetting.Name = "btnSetting";
             this.btnSetting.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnSetting.Size = new System.Drawing.Size(183, 50);
@@ -186,21 +193,23 @@ namespace MISystem.Gooey.Forms
             // 
             // panelSrvsSubMenu
             // 
+            this.panelSrvsSubMenu.Controls.Add(this.button8);
             this.panelSrvsSubMenu.Controls.Add(this.button6);
             this.panelSrvsSubMenu.Controls.Add(this.button7);
             this.panelSrvsSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSrvsSubMenu.Location = new System.Drawing.Point(0, 450);
             this.panelSrvsSubMenu.Name = "panelSrvsSubMenu";
-            this.panelSrvsSubMenu.Size = new System.Drawing.Size(183, 100);
+            this.panelSrvsSubMenu.Size = new System.Drawing.Size(183, 150);
             this.panelSrvsSubMenu.TabIndex = 7;
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.Color.Lime;
+            this.button6.BackColor = System.Drawing.Color.White;
             this.button6.Dock = System.Windows.Forms.DockStyle.Top;
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.ForestGreen;
             this.button6.Location = new System.Drawing.Point(0, 50);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(183, 50);
@@ -212,16 +221,17 @@ namespace MISystem.Gooey.Forms
             // 
             // button7
             // 
-            this.button7.BackColor = System.Drawing.Color.Lime;
+            this.button7.BackColor = System.Drawing.Color.White;
             this.button7.Dock = System.Windows.Forms.DockStyle.Top;
             this.button7.FlatAppearance.BorderSize = 0;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.ForestGreen;
             this.button7.Location = new System.Drawing.Point(0, 0);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(183, 50);
             this.button7.TabIndex = 0;
-            this.button7.Text = "Schedule/Dispatch";
+            this.button7.Text = "Schedule";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
@@ -233,7 +243,7 @@ namespace MISystem.Gooey.Forms
             this.btnService.FlatAppearance.BorderSize = 0;
             this.btnService.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnService.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnService.ForeColor = System.Drawing.Color.Lime;
+            this.btnService.ForeColor = System.Drawing.Color.White;
             this.btnService.Location = new System.Drawing.Point(0, 400);
             this.btnService.Name = "btnService";
             this.btnService.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
@@ -256,11 +266,12 @@ namespace MISystem.Gooey.Forms
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.Lime;
+            this.button4.BackColor = System.Drawing.Color.White;
             this.button4.Dock = System.Windows.Forms.DockStyle.Top;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.ForestGreen;
             this.button4.Location = new System.Drawing.Point(0, 50);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(183, 50);
@@ -272,11 +283,12 @@ namespace MISystem.Gooey.Forms
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.Lime;
+            this.button5.BackColor = System.Drawing.Color.White;
             this.button5.Dock = System.Windows.Forms.DockStyle.Top;
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.ForestGreen;
             this.button5.Location = new System.Drawing.Point(0, 0);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(183, 50);
@@ -293,7 +305,7 @@ namespace MISystem.Gooey.Forms
             this.btnInventory.FlatAppearance.BorderSize = 0;
             this.btnInventory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInventory.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInventory.ForeColor = System.Drawing.Color.Lime;
+            this.btnInventory.ForeColor = System.Drawing.Color.White;
             this.btnInventory.Location = new System.Drawing.Point(0, 250);
             this.btnInventory.Name = "btnInventory";
             this.btnInventory.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
@@ -316,11 +328,12 @@ namespace MISystem.Gooey.Forms
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Lime;
+            this.button3.BackColor = System.Drawing.Color.White;
             this.button3.Dock = System.Windows.Forms.DockStyle.Top;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.ForestGreen;
             this.button3.Location = new System.Drawing.Point(0, 50);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(183, 50);
@@ -332,11 +345,12 @@ namespace MISystem.Gooey.Forms
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Lime;
+            this.button1.BackColor = System.Drawing.Color.White;
             this.button1.Dock = System.Windows.Forms.DockStyle.Top;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.ForestGreen;
             this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(183, 50);
@@ -353,7 +367,7 @@ namespace MISystem.Gooey.Forms
             this.btnEmployee.FlatAppearance.BorderSize = 0;
             this.btnEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEmployee.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmployee.ForeColor = System.Drawing.Color.Lime;
+            this.btnEmployee.ForeColor = System.Drawing.Color.White;
             this.btnEmployee.Location = new System.Drawing.Point(0, 100);
             this.btnEmployee.Name = "btnEmployee";
             this.btnEmployee.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
@@ -375,11 +389,12 @@ namespace MISystem.Gooey.Forms
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Lime;
+            this.button2.BackColor = System.Drawing.Color.White;
             this.button2.Dock = System.Windows.Forms.DockStyle.Top;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.ForestGreen;
             this.button2.Location = new System.Drawing.Point(0, 0);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(183, 50);
@@ -396,7 +411,7 @@ namespace MISystem.Gooey.Forms
             this.btnCustomer.FlatAppearance.BorderSize = 0;
             this.btnCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCustomer.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCustomer.ForeColor = System.Drawing.Color.Lime;
+            this.btnCustomer.ForeColor = System.Drawing.Color.White;
             this.btnCustomer.Location = new System.Drawing.Point(0, 0);
             this.btnCustomer.Name = "btnCustomer";
             this.btnCustomer.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
@@ -409,7 +424,7 @@ namespace MISystem.Gooey.Forms
             // 
             // panelChildForm
             // 
-            this.panelChildForm.BackColor = System.Drawing.Color.Gray;
+            this.panelChildForm.BackColor = System.Drawing.Color.Gainsboro;
             this.panelChildForm.Controls.Add(this.panelOrderCharts);
             this.panelChildForm.Controls.Add(this.label1);
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -418,13 +433,120 @@ namespace MISystem.Gooey.Forms
             this.panelChildForm.Size = new System.Drawing.Size(909, 666);
             this.panelChildForm.TabIndex = 2;
             // 
+            // panelOrderCharts
+            // 
+            this.panelOrderCharts.Controls.Add(this.label3);
+            this.panelOrderCharts.Controls.Add(this.label2);
+            this.panelOrderCharts.Controls.Add(this.chart3);
+            this.panelOrderCharts.Controls.Add(this.label20);
+            this.panelOrderCharts.Controls.Add(this.chart2);
+            this.panelOrderCharts.Controls.Add(this.label19);
+            this.panelOrderCharts.Controls.Add(this.chart1);
+            this.panelOrderCharts.Location = new System.Drawing.Point(25, 110);
+            this.panelOrderCharts.Name = "panelOrderCharts";
+            this.panelOrderCharts.Size = new System.Drawing.Size(852, 533);
+            this.panelOrderCharts.TabIndex = 156;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(296, 279);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(218, 21);
+            this.label3.TabIndex = 164;
+            this.label3.Text = "RFB\'s CITIES PERFORMANCE";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(512, 14);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(168, 21);
+            this.label2.TabIndex = 163;
+            this.label2.Text = "RFB\'s PERFORMANCE";
+            // 
+            // chart3
+            // 
+            chartArea13.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea13);
+            legend13.Name = "Legend1";
+            this.chart3.Legends.Add(legend13);
+            this.chart3.Location = new System.Drawing.Point(397, 50);
+            this.chart3.Name = "chart3";
+            this.chart3.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
+            series13.ChartArea = "ChartArea1";
+            series13.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series13.Legend = "Legend1";
+            series13.Name = "Series1";
+            this.chart3.Series.Add(series13);
+            this.chart3.Size = new System.Drawing.Size(402, 184);
+            this.chart3.TabIndex = 162;
+            this.chart3.Text = "chart3";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(368, 579);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(204, 21);
+            this.label20.TabIndex = 161;
+            this.label20.Text = "TOTAL SALES PER MONTH";
+            // 
+            // chart2
+            // 
+            chartArea14.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea14);
+            legend14.Name = "Legend1";
+            this.chart2.Legends.Add(legend14);
+            this.chart2.Location = new System.Drawing.Point(78, 323);
+            this.chart2.Name = "chart2";
+            this.chart2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
+            series14.ChartArea = "ChartArea1";
+            series14.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series14.Legend = "Legend1";
+            series14.Name = "Series1";
+            this.chart2.Series.Add(series14);
+            this.chart2.Size = new System.Drawing.Size(670, 177);
+            this.chart2.TabIndex = 160;
+            this.chart2.Text = "chart2";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(74, 14);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(198, 21);
+            this.label19.TabIndex = 159;
+            this.label19.Text = "SERVICES PERFORMANCE";
+            // 
+            // chart1
+            // 
+            chartArea15.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea15);
+            legend15.Name = "Legend1";
+            this.chart1.Legends.Add(legend15);
+            this.chart1.Location = new System.Drawing.Point(40, 50);
+            this.chart1.Name = "chart1";
+            series15.ChartArea = "ChartArea1";
+            series15.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series15.Legend = "Legend1";
+            series15.Name = "Series1";
+            this.chart1.Series.Add(series15);
+            this.chart1.Size = new System.Drawing.Size(271, 184);
+            this.chart1.TabIndex = 158;
+            this.chart1.Text = "chart1";
+            // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Chartreuse;
-            this.label1.Location = new System.Drawing.Point(390, 36);
+            this.label1.ForeColor = System.Drawing.Color.ForestGreen;
+            this.label1.Location = new System.Drawing.Point(327, 39);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(149, 37);
             this.label1.TabIndex = 16;
@@ -442,119 +564,56 @@ namespace MISystem.Gooey.Forms
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel2.BackColor = System.Drawing.Color.ForestGreen;
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.guna2CirclePictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(200, 110);
             this.panel2.TabIndex = 0;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // panelOrderCharts
+            // button8
             // 
-            this.panelOrderCharts.Controls.Add(this.label3);
-            this.panelOrderCharts.Controls.Add(this.label2);
-            this.panelOrderCharts.Controls.Add(this.chart3);
-            this.panelOrderCharts.Controls.Add(this.label20);
-            this.panelOrderCharts.Controls.Add(this.chart2);
-            this.panelOrderCharts.Controls.Add(this.label19);
-            this.panelOrderCharts.Controls.Add(this.chart1);
-            this.panelOrderCharts.Location = new System.Drawing.Point(25, 110);
-            this.panelOrderCharts.Name = "panelOrderCharts";
-            this.panelOrderCharts.Size = new System.Drawing.Size(852, 533);
-            this.panelOrderCharts.TabIndex = 156;
+            this.button8.BackColor = System.Drawing.Color.White;
+            this.button8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.ForestGreen;
+            this.button8.Location = new System.Drawing.Point(0, 100);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(183, 50);
+            this.button8.TabIndex = 2;
+            this.button8.Text = "Dispatch";
+            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
-            // label20
+            // guna2CirclePictureBox1
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(368, 579);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(204, 21);
-            this.label20.TabIndex = 161;
-            this.label20.Text = "TOTAL SALES PER MONTH";
+            this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CirclePictureBox1.FillColor = System.Drawing.Color.Black;
+            this.guna2CirclePictureBox1.ImageRotate = 0F;
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(69, 12);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(57, 54);
+            this.guna2CirclePictureBox1.TabIndex = 0;
+            this.guna2CirclePictureBox1.TabStop = false;
             // 
-            // chart2
+            // label4
             // 
-            chartArea7.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea7);
-            legend7.Name = "Legend1";
-            this.chart2.Legends.Add(legend7);
-            this.chart2.Location = new System.Drawing.Point(78, 323);
-            this.chart2.Name = "chart2";
-            this.chart2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series7.ChartArea = "ChartArea1";
-            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series7.Legend = "Legend1";
-            series7.Name = "Series1";
-            this.chart2.Series.Add(series7);
-            this.chart2.Size = new System.Drawing.Size(670, 177);
-            this.chart2.TabIndex = 160;
-            this.chart2.Text = "chart2";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(74, 14);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(198, 21);
-            this.label19.TabIndex = 159;
-            this.label19.Text = "SERVICES PERFORMANCE";
-            // 
-            // chart1
-            // 
-            chartArea8.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea8);
-            legend8.Name = "Legend1";
-            this.chart1.Legends.Add(legend8);
-            this.chart1.Location = new System.Drawing.Point(40, 50);
-            this.chart1.Name = "chart1";
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series8.Legend = "Legend1";
-            series8.Name = "Series1";
-            this.chart1.Series.Add(series8);
-            this.chart1.Size = new System.Drawing.Size(271, 184);
-            this.chart1.TabIndex = 158;
-            this.chart1.Text = "chart1";
-            // 
-            // chart3
-            // 
-            chartArea9.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea9);
-            legend9.Name = "Legend1";
-            this.chart3.Legends.Add(legend9);
-            this.chart3.Location = new System.Drawing.Point(397, 50);
-            this.chart3.Name = "chart3";
-            this.chart3.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series9.ChartArea = "ChartArea1";
-            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series9.Legend = "Legend1";
-            series9.Name = "Series1";
-            this.chart3.Series.Add(series9);
-            this.chart3.Size = new System.Drawing.Size(402, 184);
-            this.chart3.TabIndex = 162;
-            this.chart3.Text = "chart3";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(512, 14);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(168, 21);
-            this.label2.TabIndex = 163;
-            this.label2.Text = "RFB\'s PERFORMANCE";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(296, 279);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(218, 21);
-            this.label3.TabIndex = 164;
-            this.label3.Text = "RFB\'s CITIES PERFORMANCE";
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(37, 73);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(128, 21);
+            this.label4.TabIndex = 157;
+            this.label4.Text = "Welcome, Admin";
             // 
             // frmMain
             // 
@@ -568,7 +627,6 @@ namespace MISystem.Gooey.Forms
             this.MinimumSize = new System.Drawing.Size(1125, 705);
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmMain";
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.panelSideMenu.ResumeLayout(false);
             this.panelSettingSubMenu.ResumeLayout(false);
@@ -578,12 +636,15 @@ namespace MISystem.Gooey.Forms
             this.panelCustomerSubMenu.ResumeLayout(false);
             this.panelChildForm.ResumeLayout(false);
             this.panelChildForm.PerformLayout();
-            this.panel1.ResumeLayout(false);
             this.panelOrderCharts.ResumeLayout(false);
             this.panelOrderCharts.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart3)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -622,5 +683,8 @@ namespace MISystem.Gooey.Forms
         private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
     }
 }

@@ -22,6 +22,9 @@ namespace MISystem.Gooey.Forms
             panelEquipStats.Visible = true;
             panelEquipStats.Dock = DockStyle.Fill;
 
+            panelValidate.Visible = false;
+            
+
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
@@ -46,6 +49,8 @@ namespace MISystem.Gooey.Forms
             //panelValidate.Visible = true;
             //panelValidate.Dock = DockStyle.Fill;
 
+
+            panelEquipStats.Visible = false;
 
 
             //panelEquipStats.Visible = false;

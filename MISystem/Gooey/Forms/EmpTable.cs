@@ -21,8 +21,8 @@ namespace MISystem.Gooey.Forms
         {
 
             //EMPLOYEE EDIT FORM
-            //ManageEmployees addEmp = new ManageEmployees();
-            //addEmp.Show();
+            ManageEmployees addEmp = new ManageEmployees();
+            addEmp.Show();
         }
 
         private void EmpTable_Load(object sender, EventArgs e)
@@ -31,6 +31,8 @@ namespace MISystem.Gooey.Forms
             // VALIDATION FORM
             //panelValidate.Visible = true;
             //panelValidate.Dock = DockStyle.Fill;
+
+            panelValidate.Visible = false;
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)

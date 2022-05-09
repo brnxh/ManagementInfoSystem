@@ -107,11 +107,13 @@ namespace MISystem.Gooey.Forms
         private void button1_Click(object sender, EventArgs e)
         {
             openChildFormInPanel(new EmpTable());
+            hideSubMenu();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             openChildFormInPanel(new Attendance());
+            hideSubMenu();
         }
 
         private void frmMain_Load(object sender, EventArgs e)
@@ -123,31 +125,49 @@ namespace MISystem.Gooey.Forms
         {
             
             openChildFormInPanel(new EquipInventoryTbl());
+            hideSubMenu();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             openChildFormInPanel(new ProductInventoryTbl());
+            hideSubMenu();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
+            
+            //openChildFormInPanel(new SchedForm());
             openChildFormInPanel(new MainServiceForm());
+            hideSubMenu();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
             openChildFormInPanel(new SalesControl());
+            hideSubMenu();
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
             openChildFormInPanel(new AuditLog());
+            hideSubMenu();
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
             openChildFormInPanel(new ChangePass());
+            hideSubMenu();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new DispatchForm());
+            hideSubMenu();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
         }
     }
 }

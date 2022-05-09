@@ -24,23 +24,17 @@ namespace MISystem.Gooey.Forms
 
         private void MainServiceForm_Load(object sender, EventArgs e)
         {
+
+            //panelValidate.Visible = true;
+            //panelValidate.Dock = DockStyle.Fill;
+
+            panelValidate.Visible = false;
+            panelSchedForm.Visible = false;
             panelSchedList.Visible = true;
-            panelDispatchForm.Visible = false;
-            panelDispatchList.Visible = false;
             panelSchedList.Dock = DockStyle.Fill;
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            panelSchedList.Visible = false;
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            panelDispatchList.Visible = true;
-            panelDispatchList.Dock = DockStyle.Fill;
 
         }
+
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -52,11 +46,20 @@ namespace MISystem.Gooey.Forms
 
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void btnSaveSched_Click(object sender, EventArgs e)
         {
-            panelDispatchList.Visible = false;
-            panelDispatchForm.Visible = true;
-            panelDispatchForm.Dock = DockStyle.Fill;
+            panelSchedForm.Visible = false;
+
+            panelSchedList.Visible = true;
+            panelSchedList.Dock = DockStyle.Fill;
+        }
+
+        private void btnAddSched_Click(object sender, EventArgs e)
+        {
+            panelSchedList.Visible = false;
+
+            panelSchedForm.Visible = true;
+            panelSchedForm.Dock = DockStyle.Fill;
         }
     }
 }
